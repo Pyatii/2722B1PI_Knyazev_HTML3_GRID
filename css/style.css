@@ -1,0 +1,62 @@
+@font-face {
+    font-family: gosznak;
+    src: url(../font/Gosznak-Semi\ Bold.otf);
+}
+@font-face {
+    font-family: arkel;
+    src: url(../font/VanArkel.otf);
+}
+div, aside{
+    box-sizing: border-box;
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px 300px 1fr 150px;
+    grid-template-rows: 299px 1fr;
+}
+
+.logo{
+    grid-column: 1/3;
+}
+.header-text{
+    background: linear-gradient(#2313b9,#f7f7f7);
+    grid-column: 3/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arkel;
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px #363535;
+}
+.nav{
+    grid-column: 1/2;
+    font-family: gosznak;
+}
+.content{
+    grid-column: 2/4;
+    padding: 0 20px;
+}
+.ad{
+    grid-column: 4/5;
+    font-family: gosznak;
+}
+.left{
+    float: left;
+    padding-right: 10px;
+}
+.right{
+    float: right;
+    padding-left: 10px;
+}
+h2{
+    font-family: gosznak;
+    font-size: 2rem;
+}
+aside > ul{
+    list-style-type: none;
+    padding: 20px 0 0 5px;
+    background: linear-gradient(#2313b9,#f7f7f7);
+    margin: 0;
+}
